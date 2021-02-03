@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gaming website</title>
+
+    <link rel="stylesheet" href="one.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css1.css">
+    <style>
+        
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #banner{
+        background: linear-gradient(rgba(0,0,0,0.5),#6c1aa3),url(https://cutewallpaper.org/21/steam-vaporwave-backgrounds/Vaporwave-Steam-Backgrounds,-wallpaper-collections-at-.png);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .logo{
+        width: 140px;
+        position: absolute;
+        top: 4%;
+        left: 10%;
+    }
+    .banner-text{
+        text-align: center;
+        color: #ffffff;
+        padding-top: 25%;
+    }
+    .banner-text h1{
+        font-size: 110px;
+        font-family: OCR A Std, monospace;    
+    }
+    .banner-text p{
+        font-size: 20px;
+        font-style: italic;
+    }
+    .banner-btn{
+        margin: 55px auto 0px;
+    }
+    .banner-btn a{
+        width: 150px;
+        text-decoration: none;
+        display: inline block;
+        margin:  10px;
+        padding: 12px ;
+        color: white;
+        border: .5px solid white;
+        position: relative;
+        z-index: 1;
+        transition: color 0.5s;
+    }
+    .banner-btn a span{
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    .banner-btn a:hover span{
+        width: 100%;
+    }
+    .banner-btn a:hover{
+        color: black;
+    }
+    
+    #sideNav{
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        right: -250px;
+        top: 0;
+        background: #6c1aa3;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 50px 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    #menuBtn{
+        width: 50px;
+        height: 50px;
+        background: #4e05a1;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    #menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+    }
+    @media screen and (max-width : 770px){
+        .banner-text h1{
+            font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    .logo{
+        width: 70px;
+    }
+    }
+
+    /* Service */
+
+    
+    #service{
+        width: 100%;
+        padding: 70px 0;
+        background: #161616;
+    }
+    .title-text{
+        text-align: center;
+        color: #ffffff;
+        padding-top: 0;
+    }
+    .title-text h3{
+        font-size: 75px;
+        font-family: OCR A Std, monospace;    
+    }
+    .service-box{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+    }
+    
+    .single-service{
+        flex-basis: 48%;
+        text-align: center;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        color:#161616;
+    }
+    .single-service h4
+    {
+       color: #ffffff;
+        font-size: 24px;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .single-service img{
+        width: 100%;
+        
+     
+    }
+    .single-service a
+    {
+        
+      background-color: #6c1aa3; 
+      border: none;
+      color: #ffffff;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+    
+    }
+    @media screen and (max-width : 770px){
+        .single-service{
+            flex-basis: 100%;
+            margin-bottom: 30px;
+        }
+        .service-desc p{
+            font-size: 12px;
+        }
+                   
+    }
+
+    /* Footer */
+    footer
+    #footer{
+        padding: 100px 0 20px;
+        background: #891cd19a;
+        position: relative;
+    }
+    .title-text p{
+        text-align: center;
+        color: #000000;
+        padding-top: 0;
+        font-size: 25px;
+    }
+    .title-text h1{
+        font-size: 35px;
+        color: black;
+        font-family: OCR A Std, monospace;    
+    }
+    .footer-row{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer-left,.footer-right{
+        flex-basis: 45%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .footer-right{
+        text-align: right;
+    }
+    .footer-row h1{
+        margin: 10px 0;
+    }
+    .footer-row p{
+        line-height: 35px;
+    }
+    .footer-left .fa,.footer-right .fa{
+        font-size: 20px;
+        color: #942ac5;
+        margin: 10px;
+    }
+    .footer-img{
+        max-width: 370px;
+        opacity: 0.3;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+    }
+    @media screen and (max-width : 770px){
+        .footer-left .fa,.footer-right{
+            flex-basis: 100%;
+            font-size: 14px;
+        }
+        .footer-left{
+            margin :75% ;
+        }
+        .footer-img{
+            top: 25%;
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <section id="banner">
+        <img src="img/gameroom.png" class="logo">
+        <div class="banner-text">
+            <h1>phantom reviews</h1>
+            <p><strong><i>reviews and sumaries of some established or trending games in<br> all major platforms</i></strong>
+            </p>
+            <div class="banner-btn">
+                <a href="#"><span></span> Find Out</a>
+                <a href="#"><span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#PlayStation">PlayStation</a></li>
+                <li><a href="#Xbox">Xbox</a></li>
+                <li><a href="#PC">PC</a></li>
+                <li><a href="#Nintendo">Nintendo</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="img/menu.png" id="menu">
+    </div>
+
+
+<!-- Service Page -->
+
+<section id="service">
+    <div class="title-text">
+        <h3>platforms</h3>
+    </div>
+      <br><br>
+    <div class="service-box">
+        <div class="single-service">
+
+            <img src="https://images.unsplash.com/photo-1499551660540-eaf0697882f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" style="border: 2px solid #6c1aa3;">
+            <h4 class="service-desc">
+                <a class="btn" href="#">Playstation</a>
+              </h4> 
+        </div>
+        <div class="single-service">
+            <img src="https://images.unsplash.com/photo-1604586376807-f73185cf5867?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"  style="border: 2px solid #6c1aa3;">
+            <h4 class="service-desc">
+                <a class="btn" href="#">Xbox</a>
+              </h4>
+        </div>
+        <div class="single-service">
+            <img src="https://images.unsplash.com/photo-1603481546579-65d935ba9cdd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"  style="border: 2px solid #6c1aa3;">
+            <h4 class="service-desc">
+                <a class="btn" href="#">PC</a>
+              </h4>
+        </div>
+        <div class="single-service">
+            <img src="https://images.unsplash.com/photo-1538895194639-f50554a2ca24?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80"  style="border: 2px solid #6c1aa3;">
+            <h4 class="service-desc">
+                <a class="btn" href="#">Nintendo</a>
+              </h4>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Playstation -->
+
+<section id="PlayStation">
+    <div class="title-text">
+        <h1>playstation games</h1> 
+    </div>
+</section>
+<br>
+    <section id="service">
+    <div class="service-box">
+        <div class="single-service">
+
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2021/01/WCCFgodofwar6.jpg">
+            <h4 class="service-desc">
+                <p><strong>God of War</strong><br>Based in ancient mythology, the story follows Kratos, a Spartan warrior who was tricked into killing his family by his former master, the Greek God of War Ares. This sets off a series of events that leads to wars with the mythological pantheons.</p>
+              </h4> 
+        </div>
+        <div class="single-service">
+            <img src="https://cdn.mos.cms.futurecdn.net/r6deDatMxXnxVQMSnDi7Ak.jpg">
+            <h4 class="service-desc">
+                <p><strong>Resident Evil</strong><br>The game's plot follows Chris Redfield and Jill Valentine, members of an elite task force known as S.T.A.R.S., as they investigate the outskirts of Raccoon City following the disappearance of their team members. They soon become trapped in a mansion infested with zombies and other monsters.</p>
+              </h4>
+        </div>
+        <div class="single-service">
+            <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2620/IE1JWLbJBd5kCxTzxKvaCYBw.png?w=440">
+            <h4 class="service-desc">
+               <p><strong>Uncharted</strong><br>Combining action-adventure and platforming elements with a third-person perspective, the game follows Nathan Drake, the supposed descendant of the explorer Sir Francis Drake, as he seeks the lost treasure of El Dorado, with the help of journalist Elena Fisher and mentor Victor Sullivan.
+            </p>
+              </h4>
+        </div>
+        <div class="single-service">
+            <img src="https://techraptor.net/sites/default/files/styles/image_header/public/2020-11/Demon%27s%20Souls%20PS5%20Activities%20UI%20features%20cover.jpg?itok=Li5uJQSB">
+            <h4 class="service-desc">
+               <p><strong>Demon Souls</strong><br> Demon's Souls takes place in the kingdom of Boletaria. ... Now bound to the Nexus until the Old One is returned to slumber, the player travels to five regions of Boletaria, killing the powerful demons controlling those areas and absorbing their souls to increase their power so they can face King Allant.</p>                 
+             </h4>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <!-- Xbox -->
+    <section id="Xbox">
+        <div class="title-text">
+            <h1>xbox games</h1> 
+
+        </div>
+    </section>
+    <br>
+        <section id="service">
+        <div class="service-box">
+            <div class="single-service">
+    
+                <img src="https://d3isma7snj3lcx.cloudfront.net/optim/images/news/30/3050832989/halo-infinite-le-producteur-chris-lee-quitte-le-projet-7c5510de__1920_1080__0-118-2560-947.jpg">
+                <h4 class="service-desc">
+                    <p><strong>Halo</strong><br>The central focus of the franchise builds off the experiences of Master Chief John-117, one of a group of supersoldiers codenamed Spartans, and his artificial intelligence (AI) companion, Cortana. The original trilogy centers on an .
+                    </p>
+                  </h4> 
+            </div>
+            <div class="single-service">
+                <img src="https://cdn.mos.cms.futurecdn.net/p4fSkPtHLMUz8tDRo248oB-970-80.jpg.webp">
+                <h4 class="service-desc">
+                    <p><strong>Forza horizon</strong><br>Experience a shared world with dynamic seasons. Explore beautiful scenery, collect over 450 cars and become a Horizon Superstar in historic Britain. With highlight the super-car "McLaren Senna", in honor of Ayrton Senna.</p>
+                  </h4>
+            </div>
+            <div class="single-service">
+                <img src="https://cdn.mos.cms.futurecdn.net/saLnhFFeWWQAtVmCtg6ccQ-970-80.jpg.webp">
+                <h4 class="service-desc">
+                   <p><strong>Ashen</strong><br>Set in a sprawling open world, Ashen is a tight, 3rd person, skill-based action RPG about guiding your wanderer through a newly lit world. Fight alongside others, forge friendships and defeat the creatures of shadow determined to .</p>
+                  </h4>
+            </div>
+            <div class="single-service">
+                <img src="https://cdn.mos.cms.futurecdn.net/nngbDGDRK7f7HKozcjq4SG-970-80.jpg.webp">
+                <h4 class="service-desc">
+                   <p><strong>Quantum break</strong><br>Quantum Break is a science fiction action-adventure third-person shooter video game developed by Remedy Entertainment and published by Microsoft Studios. The game was released worldwide for Microsoft Windows and Xbox One in April 2016. The game centers on Jack Joyce,  </p>                 
+                 </h4>
+            </div>
+        </div>
+    </div>
+    
+        </section>
+    <!-- PC -->
+    <section id="PC">
+        <div class="title-text">
+            <h1>pc games</h1> 
+
+        </div>
+    </section>
+<br>
+    <section id="service">
+        <div class="service-box">
+            <div class="single-service">
+    
+                <img src="https://www.reference-gaming.com/assets/media/product/22287/outlast-trinity-xbox-one-58d3a046ab4da.jpg?format=product-cover-large&k=1490264134">
+                <h4 class="service-desc">
+                    <p><strong>outlast</strong><br>Outlast is a first-person survival horror video game developed and published by Red Barrels. The game revolves around a freelance investigative journalist, Miles Upshur, who decides to investigate a remote psychiatric hospital named Mount Massive Asylum, located deep in the mountains of Lake County, Colorado.<br> the second title of the franshize  a journalist named Blake Langermann, along with his wife Lynn, roaming the Arizona desert to explore the murder of a pregnant woman only known as Jane Doe.[1] Blake and Lynn get separated in a helicopter crash, and Blake has to find his wife while traveling through a village inhabited by a deranged sect that believes the end of days are upon them.</p>
+                  </h4> 
+            </div>
+            <div class="single-service">
+                <img src="https://i2.wp.com/www.techdigest.tv/wp-content/uploads/2020/09/league-of-legends.jpg?ssl=1">
+                <h4 class="service-desc">
+                    <p><strong>League of Legends</strong><br>League of Legends is a staple moba game and one of the most popular to this day, where two teams of five powerful champions face off to destroy the other's base, varying from over 140 champions your objective is to take down enimy towers as you battle your way to victory.</p>
+                  </h4>
+            </div>
+            <div class="single-service">
+                <img src="https://images.pushsquare.com/465e76aa7dfba/splinter-cell-ghost-recon-wildlands-ps4-playstation-4.original.jpg">
+                <h4 class="service-desc">
+                   <p><strong>splinter cell</strong><br>Stealth-mission expert Sam Fisher searches for two US agents in Georgia and soon uncovers a plot involving a nuclear device. Sam Fisher is an elite Black-Ops agent called the Splinter Cell. When two government operatives undercover in Georgia go missing, Sam is sent in by the Third Echelon to investigate.</p>
+                  </h4>
+            </div>
+            <div class="single-service">
+                <img src="https://wallpaperaccess.com/full/147194.jpg">
+                <h4 class="service-desc">
+                   <p><strong>Counter-Strike: Global Offensive</strong><br> Counter-Strike: Global Offensive or CS:GO for short expands upon the team-based first person shooter gameplay the original Counter-Strike pioneered when it launched in 1999. Two teams compete in multiple rounds of objective-based game modes with the goal of winning enough rounds to win the match.</p>                 
+                 </h4>
+            </div>
+        </div>
+    </div>
+    
+        </section>
+    <!-- Nintendo -->
+    <section id="Nintendo">
+        <div class="title-text">
+            <h1>Nintendo games</h1> 
+        </div>
+    </section>
+    <br>
+        <section id="service">
+        <div class="service-box">
+            <div class="single-service">
+    
+                <img src="https://www.telerama.fr/sites/tr_master/files/styles/simplecrop1000/public/super-mario-maker-2_0.jpg?itok=gv5FgRYo">
+                <h4 class="service-desc">
+                    <p><strong>Mario</strong><br>A plumber named Mario and his brother Luigi travel through the Mushroom Kingdom to save the princess from the evil Bowser. But one day, evil cast a shadow over the land and the evil King Bowser Koopa emerged with his army of Goombas, Spinies, Flying Koopas, and other malignant creatures.</p>
+                  </h4> 
+            </div>
+            <div class="single-service">
+                <img src="https://statics.lesinrocks.com/content/thumbs/uploads/2017/03/width-1125-height-612-quality-10/daily1.jpg">
+                <h4 class="service-desc">
+                    <p><strong>Lengende of Zelda</strong><br>An evil man has captured her. ... That is the basic plot outline of most (but not all) Zelda games: Link, a commoner, is suddenly thrust into a mysterious, magical quest in the kingdom of Hyrule to save the princess, Zelda, from one evil or another.</p>
+                  </h4>
+            </div>
+            <div class="single-service">
+                <img src="https://i0.wp.com/culturedvultures.com/wp-content/uploads/2016/11/animal-crossing-new-leaf-amiibo-update-banner-790x486.jpg?fit=770%2C474&ssl=1">
+                <h4 class="service-desc">
+                   <p><strong>Animal Crossing: New Horizons</strong><br>In Animal Crossing, the player character is a human who lives in a village inhabited by various anthropomorphic animals, carrying out various activities such as fishing, bug catching, and fossil hunting.      </p>
+                  </h4>
+            </div>
+            <div class="single-service">
+                <img src="https://mms.businesswire.com/media/20200826005266/en/815910/5/Switch_JustDance2021.jpg?download=1">
+                <h4 class="service-desc">
+                   <p><strong>Just Dance</strong><br>Just Dance is a motion-based dancing game for multiple players, with each game including a collection of classic and modern songs each with their own dance choreographies. During each song, players mirror a dance performed by actors on the screen, following commands that appear on the screen, and are awarded for their accuracy. Additionally, there are gold moves in which players must strike a pose in order to earn bonus points. Players are given ranks based on how well they do. Depending on the game and system it is played on, the game can be played with either motion controllers or camera devices (such as the Wii Remote and Kinect), or using an app downloaded on a smart device.</p>                 
+                 </h4>
+            </div>
+        </div>
+    </div>
+    
+        </section>
+
+  <!-- Footer Page -->
+  <footer>
+    
+<section id="footer">
+    <img src="img/footer.jpg" class="footer-img">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <h1>Visit Shop Today</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock-o"></i>Monday to Friday -9am to 9pm</p>
+            <p><i class="fa fa-clock-o"></i>Saturday to Sunday -8am to 11pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get in Touch</h1>
+            <p>#DHA phase IV,DownTown City<i class="fa fa-map-marker"></i></p>
+            <p>taha.yassine.ennabili@gmail.com<i class="fa fa-paper-plane"></i></p>
+            <p>+231 234 234<i class="fa fa-phone"></i></p>
+        </div>
+    </div>
+
+    
+      
+  </footer>  
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "img/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "img/menu.png";
+    }
+    }
+
+</script>
+</body>
+</html>
